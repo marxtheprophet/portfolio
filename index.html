@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anurag Chakarde | Software Engineer</title>
+    
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Floating Navbar -->
+    <nav class="floating-nav fade-in-down">
+        <div class="nav-left">
+            <img src="reddit-avatar.png" alt="Avatar" class="avatar-img">
+            <span class="logo">anurag<b>chakarde</b></span>
+        </div>
+        <div class="nav-center">
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-right">
+            <a href="resumeportfolio.pdf" target="_blank" class="btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                Resume
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero section">
+            <div class="hero-intro reveal">
+                Hey there <span class="wave">✌️</span> I am Anurag Chakarde
+            </div>
+            
+            <h1 class="hero-headline reveal">
+                A <span class="highlight italic">Software Engineer</span> turning complex logic into robust systems.
+            </h1>
+
+            <div class="hero-polaroids">
+                <div class="polaroid p-1 reveal-stagger">
+                    <div class="speech-bubble blue">Between Projects</div>
+                    <img src="projector.jpg" alt="Chess">
+                </div>
+                <div class="polaroid p-2 reveal-stagger">
+                    <img src="puppy.jpg" alt="Pool">
+                </div>
+                <div class="polaroid p-3 reveal-stagger">
+                    <div class="speech-bubble beige">WIP</div>
+                    <img src="cafe.jpg" alt="Cafe">
+                </div>
+            </div>
+        </section>
+
+        <!-- Selected Work -->
+        <section id="work" class="work section">
+            <div class="section-tag reveal">
+                <div class="square-dot"></div>
+                SELECTED WORK
+            </div>
+            <h2 class="section-title reveal">A look into recent projects</h2>
+
+            <div class="project-grid">
+                <!-- Project 1: Fit Beat -->
+                <div class="project-card reveal" onclick="openModal('fitbeat')">
+                    <div class="card-image-wrapper">
+                        <img src="1767036815520.jpg" alt="Fit Beat Real-Time ECG Dashboard" class="card-image">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-tags">
+                            <span class="tag">IoT</span>
+                            <span class="tag">Machine Learning</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-text">
+                                <h3>Fit Beat</h3>
+                                <p>Real-Time ECG Monitoring and Classification System using ESP32.</p>
+                            </div>
+                            <div class="card-arrow">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Search Engine -->
+                <div class="project-card reveal" onclick="openModal('mentat')">
+                    <div class="card-image-wrapper">
+                        <img src="SCR-20260607-kywa.png" alt="Mentat Search Engine UI" class="card-image">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-tags">
+                            <span class="tag">Python + FastAPI</span>
+                            <span class="tag">Algorithms</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-text">
+                                <h3>Search Engine</h3>
+                                <p>A domain-constrained web crawler and BM25-based search service.</p>
+                            </div>
+                            <div class="card-arrow">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Bureautrac -->
+                <div class="project-card reveal" onclick="openModal('bureautrac')">
+                    <div class="card-image-wrapper">
+                        <img src="SCR-20260607-lcpo.jpeg" alt="Bureautrac Screenshot" class="card-image">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-tags">
+                            <span class="tag">Blockchain</span>
+                            <span class="tag">Full Stack</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-text">
+                                <h3>Bureautrac</h3>
+                                <p>Government Infrastructure Tracker built on a permissioned Hyperledger Fabric network.</p>
+                            </div>
+                            <div class="card-arrow">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="about-left">
+            <div class="about-image-wrapper">
+                <img src="about-photo.jpg" alt="About Me" class="about-image">
+            </div>
+        </div>
+        <div class="about-right">
+            <h2 class="about-title">About Me.</h2>
+            <div class="about-content">
+                <p>Final year Computer Engineering undergrad at Thapar. Like building efficient systems that solve problems.</p>
+                <p>Have experience across web, blockchain, ML/DS and IoT.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer section">
+        <div class="footer-status reveal">
+            <div class="status-pill">
+                <div class="green-dot"></div>
+                Available for work
+            </div>
+        </div>
+        
+        <h2 class="footer-headline reveal">
+            <span class="highlight italic">Let's connect!</span><br>
+            I am open for Full-Time roles.
+        </h2>
+
+        <div class="footer-grid reveal">
+            <div class="footer-col">
+                <div class="footer-label">EMAIL</div>
+                <a href="mailto:anuragchakarde@gmail.com" class="footer-link-large">anuragchakarde@gmail.com</a>
+                
+                <div class="footer-label mt-4">RESUME</div>
+                <a href="resumeportfolio.pdf" target="_blank" class="btn-primary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    Download Resume
+                </a>
+            </div>
+            
+            <div class="footer-col">
+                <div class="footer-label">LINKS</div>
+                <div class="social-links">
+                    <a href="#work">Work</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <div class="footer-label">SOCIAL</div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/anurag-chakarde-83456022b/" target="_blank">LinkedIn ↗</a>
+                    <a href="https://github.com/marxtheprophet" target="_blank">GitHub ↗</a>
+                    <a href="https://www.instagram.com/subchungussi/" target="_blank">Instagram ↗</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom reveal">
+            <div>© 2026 Anurag Chakarde. All Rights Reserved.</div>
+            <div>Created with ❤️</div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="modal-overlay" id="projectModal" onclick="closeModal(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
